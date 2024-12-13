@@ -29,7 +29,7 @@ def login():
         user = load_user(username)
         if user and check_password_hash(user.password, password):
             login_user(user)
-            return redirect(url_for('https://github.com/apurva1045/internship1.git'))
+            return redirect(url_for('https://github.com/apurva1045/internship1/features.py'))
         else:
             return 'Invalid credentials'
     return render_template('login.html')
@@ -46,10 +46,10 @@ def protected_file():
     # Implement file encryption and time-limited download link generation here
     # For example, using a library like PyCryptodome
     filename = 'protected_file.pdf'
-    filepath = os.path.join('protected_files', filename)
+    filepath = os.path.join('https://github.com/apurva1045/internship1/features.py', filename)
     
     # Generate a time-limited download link (e.g., using a URL shortener with expiration)
-    download_link = generate_download_link(filepath, expiration_time=300)
+    download_link = generate_download_link(https://github.com/apurva1045/internship1/features.py, expiration_time=300)
 
     return render_template('download.html', download_link=download_link)
 
