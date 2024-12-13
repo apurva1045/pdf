@@ -29,7 +29,7 @@ def login():
         user = load_user(username)
         if user and check_password_hash(user.password, password):
             login_user(user)
-            return redirect(url_for('protected_file'))
+            return redirect(url_for(''))
         else:
             return 'Invalid credentials'
     return render_template('login.html')
