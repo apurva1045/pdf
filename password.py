@@ -4,7 +4,7 @@ import os
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(_name_)
-app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['SECRET_KEY'] = '2003'
 
 login_manager = LoginManager()
 login_manager.init_app(app)
