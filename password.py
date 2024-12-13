@@ -29,7 +29,7 @@ def login():
         user = load_user(username)
         if user and check_password_hash(user.password, password):
             login_user(user)
-            return redirect(url_for(''))
+            return redirect(url_for('https://github.com/apurva1045/internship1.git'))
         else:
             return 'Invalid credentials'
     return render_template('login.html')
